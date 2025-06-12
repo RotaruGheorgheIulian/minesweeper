@@ -1,0 +1,37 @@
+site_name: My Docs
+site_description: "The best documentation site built with MkDocs"
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: slate  # Dark mode by default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default  # Light mode as an option
+      primary: blue
+      accent: deep-orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  font:
+    text: Roboto
+    code: Fira Code
+  features:
+    - navigation.instant  # Faster navigation
+    - navigation.tracking  # Highlight active section
+    - navigation.expand  # Auto-expand sidebar
+    - navigation.top  # "Back to top" button
+    - toc.integrate  # Inline table of contents
+    - search.highlight  # Highlights search terms
+    - search.suggest  # Auto-suggestions in search
+    - content.code.copy  # Copy button for code blocks
+
+plugins:
+  - search  # Enables search
+  - minify:
+      minify_html: true  # Makes pages load faster
+  - awesome-pages
