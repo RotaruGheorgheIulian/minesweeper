@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minesweeper Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/controls.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <link rel="stylesheet" href="css/powerUps.css" />
+  <link rel="stylesheet" href="css/timer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Controls -->
+    <div class="top-controls">
+      <div class="dimension-select">
+        <label for="rows">Rows:</label>
+        <select id="rows"></select>
+
+        <label for="cols">Cols:</label>
+        <select id="cols"></select>
+      </div>
+
+      <div class="buttons">
+        <button id="startBtn"><i class="fas fa-play"></i> Start</button>
+        <button id="stopBtn"><i class="fas fa-stop"></i> Stop</button>
+      </div>
+
+      <div class="timer-box" title="Time Elapsed">
+        <i class="fas fa-stopwatch"></i>
+        <span id="timer">00:00</span>
+      </div>
+
+    </div>
+
+    <!-- Game Grid -->
+    <div id="gameGrid" class="grid"></div>
+
+    <!-- Message Box -->
+    <div id="gameMessage" class="message-box"></div>
+
+    <!-- Power-ups -->
+    <div class="powerups">
+      <h3>Power-Ups</h3>
+      <div id="powerUpList">
+        <div class="powerup" title="Protects you from the next bomb.">
+          <i class="fas fa-shield-alt"></i>
+          <span class="count">2</span>
+        </div>
+        <div class="powerup" title="Reveals a safe cell.">
+          <i class="fas fa-search"></i>
+          <span class="count">1</span>
+        </div>
+        <div class="powerup" title="Flags a nearby mine automatically.">
+          <i class="fas fa-flag"></i>
+          <span class="count">3</span>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="js/dimension-select.js"></script>
+  <script src="js/generate-grid.js"></script>
+  <script src="js/getNeighbors.js"></script>
+  <script src="js/renderGrid.js"></script>
+  <script src="js/startBtn.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/window-load.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  gap: 2px;
+  background: #444;
+  padding: 10px;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.grid-cell {
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.grid-cell.revealed {
+  background-color: #ccc;
+  color: #000;
+  cursor: default;
+}
+
+.grid-cell.flagged {
+  background-color: #f44336;
+  color: #fff;
+}
