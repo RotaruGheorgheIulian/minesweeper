@@ -33,7 +33,7 @@ mkdocs serve
 ---
 ## GitHub
 - creezi repo nou -> [LINK](https://github.com/new)
-- apoi dai push
+- initializare commit:
 ```bash
 git init
 git add .
@@ -42,4 +42,10 @@ git commit -m "Initial commit: ceva descriptiv la ce ai facut pana acum"
 - conectarea la github:
 ```bash
 git remote add origin https://github.com/YOUR_USERNAME/minesweeper.git
+```
+
+- push the code:
+```bash
+git branch -M main
+git push -u origin main
 ```
